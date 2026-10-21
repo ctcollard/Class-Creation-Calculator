@@ -28,7 +28,7 @@ public class Calculator {
         return q + " = " + a + " / " + b;
     }
 
-    public String add(double a, double b) {
+    /*public String add(double a, double b) {
         s = a + b;
         return s + " = " + a + " + " + b;
     }
@@ -46,5 +46,5 @@ public class Calculator {
     public String divide(double a, double b) {
         q = a / b;
         return q + " = " + a + " / " + b;
-    }
+    } */
 }
