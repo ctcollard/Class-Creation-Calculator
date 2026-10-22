@@ -35,21 +35,21 @@ public class Calculator {
 
     public String add(double a, double b) {
         s2 = a + b;
-        return s + " = " + a + " + " + b;
+        return s2 + " = " + a + " + " + b;
     }
 
     public String subtract(double a, double b) {
         d2 = a - b;
-        return d + " = " + a + " - " + b;
+        return d2 + " = " + a + " - " + b;
     }
 
     public String multiply(double a, double b) {
         p2 = a * b;
-        return p + " = " + a + " * " + b;
+        return p2 + " = " + a + " * " + b;
     }
 
     public String divide(double a, double b) {
         q2 = a / b;
-        return q + " = " + a + " / " + b;
+        return q2 + " = " + a + " / " + b;
     } 
 }
