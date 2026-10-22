@@ -7,6 +7,11 @@ public class Calculator {
     private int d;
     private int p;
     private int q;
+    private double s2;
+    private double d2;
+    private double p2;
+    private double q2;
+    
 
     public String add(int a, int b) {
         s = a + b;
@@ -28,23 +33,23 @@ public class Calculator {
         return q + " = " + a + " / " + b;
     }
 
-    /*public String add(double a, double b) {
-        s = a + b;
+    public String add(double a, double b) {
+        s2 = a + b;
         return s + " = " + a + " + " + b;
     }
 
     public String subtract(double a, double b) {
-        d = a - b;
+        d2 = a - b;
         return d + " = " + a + " - " + b;
     }
 
     public String multiply(double a, double b) {
-        p = a * b;
+        p2 = a * b;
         return p + " = " + a + " * " + b;
     }
 
     public String divide(double a, double b) {
-        q = a / b;
+        q2 = a / b;
         return q + " = " + a + " / " + b;
-    } */
+    } 
 }
