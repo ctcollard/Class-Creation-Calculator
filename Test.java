@@ -34,6 +34,7 @@ public class Test extends Calculator {
         result = myCalc.divide(value1, value2);
     else {
         System.err.println("Invalid operator.");
+        input.close();
         return;
     }
     System.out.println("Your result is: " + result);
@@ -57,6 +58,7 @@ else if (dataType.equals("integer")) {
         result = myCalc.divide(value1, value2);
     else {
         System.err.println("Invalid operator.");
+        input.close();
         return;
     }
     System.out.println("Your result is: " + result);
@@ -67,6 +69,6 @@ else if (dataType.equals("integer")) {
 else {
     System.err.println("Data type incompatible - exiting program.");
 }
-    
+    input.close();
 }
 }
