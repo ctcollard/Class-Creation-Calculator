@@ -7,26 +7,22 @@ public class Test extends Calculator {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to your calculator!");
         System.out.println("Please input your data type, operator, and values. Separate your inputs with a single space.");
-        String dataType = input.nextLine();
-        String operator = input.nextLine();
-        int intValue1 = input.nextInt();
-        int intValue2 = input.nextInt();
-        double doubleValue1 = input.nextDouble();
-        double doubleValue2 = input.nextDouble();
-        input.close();
+        String dataType = input.next();
+        String operator = input.next();
+        //input.close();
 
         Calculator myCalc = new Calculator();
-        System.out.println(myCalc.add(3.5,2.5));
+        /*System.out.println(myCalc.add(3.5,2.5));
         System.out.println(myCalc.subtract(3.5,2.5));
         System.out.println(myCalc.multiply(3.5,2.5));
-        System.out.println(myCalc.divide(3.5,2.5));
+        System.out.println(myCalc.divide(3.5,2.5));*/
     
 
     if (dataType.equals("double")) {
 
     double value1 = input.nextDouble(); // your scanner object must be named input to avoid a mismatch or change the input object name to match your scanner object name
     double value2 = input.nextDouble();
-    double result;
+    String result;
 
     if (operator.equals("+"))
         result = myCalc.add(value1, value2);
@@ -40,6 +36,7 @@ public class Test extends Calculator {
         System.err.println("Invalid operator.");
         return;
     }
+    System.out.println("Your result is: " + result);
     // Add your result printing statement here
 }
 
@@ -48,7 +45,7 @@ else if (dataType.equals("integer")) {
 
     int value1 = input.nextInt();
     int value2 = input.nextInt();
-    int result;
+    String result;
 
     if (operator.equals("+"))
         result = myCalc.add(value1, value2);
@@ -62,6 +59,7 @@ else if (dataType.equals("integer")) {
         System.err.println("Invalid operator.");
         return;
     }
+    System.out.println("Your result is: " + result);
     // Add your result printing statement here
 } 
 
