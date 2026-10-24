@@ -1,3 +1,12 @@
+/*
+* Title of Class: Calculator
+* Author's Name: Charlotte Collard
+* Purpose: To create a class that houses the addition, subtraction, division, and multiplication methods.
+*
+* Resources: Mrs. Ramsey-Rutledge :)
+*
+*/
+
 //package ClassCreationCalculator;
 
 public class Calculator {

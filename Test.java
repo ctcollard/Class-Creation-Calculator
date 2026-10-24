@@ -1,3 +1,11 @@
+/*
+* Title of Class: Test
+* Author's Name: Charlotte Collard
+* Purpose: To create a class in which I can test out values to see if my code works. 
+*
+* Resources: Mrs. Ramsey-Rutledge :)
+*
+*/
 //package ClassCreationcalculator;
 import java.util.Scanner;
 
@@ -9,7 +17,6 @@ public class Test extends Calculator {
         System.out.println("Please input your data type, operator, and values. Separate your inputs with a single space.");
         String dataType = input.next();
         String operator = input.next();
-
 
         /*Calculator myCalc = new Calculator();
         System.out.println(Calculator.add(3.5,2.5));
