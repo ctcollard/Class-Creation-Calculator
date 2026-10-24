@@ -1,7 +1,7 @@
 //package ClassCreationCalculator;
 
 public class Calculator {
-    private int a;
+    /*private int a;
     private int b;
     private int s;
     private int d;
@@ -10,30 +10,26 @@ public class Calculator {
     private double s2;
     private double d2;
     private double p2;
-    private double q2;
+    private double q2;*/
     
 
-    public String add(int a, int b) {
-        s = a + b;
-        return s + " = " + a + " + " + b;
+    public static <T extends Number> double add(T a, T b) {
+        return a.doubleValue() + b.doubleValue();
     }
 
-    public String subtract(int a, int b) {
-        d = a - b;
-        return d + " = " + a + " - " + b;
+    public static <T extends Number> double subtract(T a, T b) {
+        return a.doubleValue() - b.doubleValue();
     }
 
-    public String multiply(int a, int b) {
-        p = a * b;
-        return p + " = " + a + " * " + b;
+    public static <T extends Number> double multiply(T a, T b) {
+        return a.doubleValue() * b.doubleValue();
     }
 
-    public String divide(int a, int b) {
-        q = a / b;
-        return q + " = " + a + " / " + b;
+    public static <T extends Number> double divide(T a, T b) {
+        return a.doubleValue() / b.doubleValue();
     }
 
-    public String add(double a, double b) {
+    /*public String add(double a, double b) {
         s2 = a + b;
         return s2 + " = " + a + " + " + b;
     }
@@ -51,5 +47,5 @@ public class Calculator {
     public String divide(double a, double b) {
         q2 = a / b;
         return q2 + " = " + a + " / " + b;
-    } 
+    } */
 }
